@@ -1,8 +1,8 @@
 ## App性能优化
-### [App性能分析工具](http://note.youdao.com/noteshare?id=85c101fb7bde32c3e2f89650e9327a94&sub=5C146F8A07354924B554E42CBF63D5B7)
-### [App启动优化](http://note.youdao.com/noteshare?id=da3c791601b7c364bc9930392033111a&sub=8C40FC6A52444A9FB4E351D0A3ED3375)
-### [App布局优化](http://note.youdao.com/noteshare?id=48843684ef700f70899b253a7bb0a3cc&sub=73F064820AEA440786FA535046E49889)
-### [App响应优化](http://note.youdao.com/noteshare?id=3843cc4a35337bab460dba763490b940&sub=A71412EAE9E843229050F08348D3C786)
+### [App性能分析工具](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7-LeakCanary.md)
+### [App启动优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96.md)
+### [App布局优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E5%B8%83%E5%B1%80%E4%BC%98%E5%8C%96.md)
+### [App响应优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E5%93%8D%E5%BA%94%E4%BC%98%E5%8C%96.md)
 ### App内存优化
 ### App电池使用优化
 ### App网络优化
