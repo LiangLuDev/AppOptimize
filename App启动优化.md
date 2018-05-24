@@ -1,4 +1,5 @@
 ### App启动方式
+
 - **冷启动**
 > App没有启动过或App进程被killed, 系统中不存在该App进程,
 App启动需要创建App进程, 加载相关资源, 启动Main Thread, 初始化首屏Activity等此时启动App即为冷启动.
