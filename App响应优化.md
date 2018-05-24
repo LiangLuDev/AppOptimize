@@ -220,3 +220,38 @@ Process.setThreadPriority(THREAD_PRIORITY_BACKGROUND);
 ![16ms-2](https://upload-images.jianshu.io/upload_images/851999-1904e950165ab33d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/529)
 
 丢帧给用户的感觉就是卡顿, 而且如果运算过于复杂, 丢帧会更多, 导致界面常常处于停滞状态, 卡到爆.
+
+### 卡顿原因
+一般导致卡顿的原因有以下几种：
+- #### 布局复杂
+> 界面性能取决于UI渲染性能. 我们可以理解为UI渲染的整个过程是由CPU和GPU两个部分协同完成的.
+>
+> CPU负责UI布局元素的Measure, Layout, Draw等相关运算执行. GPU负责**栅格化(rasterization)**, 将UI元素绘制到屏幕上
+>
+>如果我们的UI布局层次太深, 或是自定义控件的onDraw中有复杂运算, CPU的相关运算就可能大于16ms, 导致卡顿.
+>
+> ps.**栅格化(rasterization)：** 所谓的栅格化，就是绘制那些Button,Shape,Path,Bitmap等组件最基础的操作。它把那些组件拆分到不同的像素上进行显示，通俗点说，就是解决哪些复杂的XML布局文件和标记语言，使之转换成用户能看懂的图像，但是这不是直接转换，XML布局文件需要在CPU中首先转换为多边形或者纹理，然后再传递给GPU进行栅格化，对于栅格化，跟OpenGL有关，栅格化是一个特别费时的操作。
+
+- #### 过度绘制(Overdraw)
+> **Overdraw:** 用来描述一个像素在屏幕上多少次被重绘在一帧上.
+通俗的说: 理想情况下, 每屏每帧上, 每个像素点应该只被绘制一次, 如果有多次绘制, 就是Overdraw, 过度绘制了.
+
+Android系统提供了可视化的方案来让我们很方便的查看overdraw的现象:
+在"系统设置"-->"开发者选项"-->"调试GPU过度绘制"中开启调试:
+
+![Overdraw1](https://img-blog.csdn.net/20161011145743596?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+
+此时界面可能会有五种颜色标识:
+
+![Overdraw2](https://upload-images.jianshu.io/upload_images/851999-cf8322c4d28294cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/287)
+
+- 原色: 没有Overdraw
+- 蓝色: 1次Overdraw
+- 绿色: 2次Overdraw
+- 粉色: 3次Overdraw
+- 红色: 4次及4次以上的Overdraw
+> 一般来说, **蓝色是可接受**的, 是性能优的.
+>
+> 所以要减少多次绘制，即可达到优化目的。
+
+
