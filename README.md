@@ -12,7 +12,7 @@
 - [App响应优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E5%93%8D%E5%BA%94%E4%BC%98%E5%8C%96.md)
 - [App内存优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96.md)
 - [App网络优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96.md)
-- App电池使用优化
+- [App电量优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E7%94%B5%E9%87%8F%E4%BC%98%E5%8C%96.md)
 - App瘦身
 
 
