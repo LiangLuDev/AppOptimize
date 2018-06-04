@@ -1,9 +1,11 @@
-## 前言
+## App瘦身
+
+### 前言
 > 虽然现在无线网广泛，流量不要钱，但是：
 > - 类型功能一样的产品，用户肯定会选择APK小的下载。
 > - 对于我们来说，也是技术优化提升的体验。
 
-## 安装包的组成
+### 安装包的组成
 这里我们使用Android Studio自带工具(Android Studio 2.2.3之后)查看：```Android Studio -> Build -> Analyze APK```选择要Apk文件：
 
 ![Analyze APK](https://diycode.b0.upaiyun.com/photo/2017/76c364d5ad294e871cdffb25c68e549e.png)
