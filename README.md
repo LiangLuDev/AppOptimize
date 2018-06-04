@@ -13,8 +13,11 @@
 - [App内存优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96.md)
 - [App网络优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96.md)
 - [App电量优化](https://github.com/LiangLuDev/AppOptimize/blob/master/App%E7%94%B5%E9%87%8F%E4%BC%98%E5%8C%96.md)
-- App瘦身
+- [App瘦身]()
 
+
+### 后记
+最近忙着工作、学习、面试（学习？不存在的，哈哈，事情太多。）所以磨磨叽叽的花了10多天才整理完。整理的很多优化教程之前在项目里面经常使用，而有些优化只停留在会使用的阶段（不知所以然），所以，这次在啃面试题的时候，借机认真整理一下，查阅资料了解一下原理，也学到了很多新的优化方法。
 
 
 ### 意见反馈
